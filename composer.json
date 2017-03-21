@@ -1,0 +1,44 @@
+{
+  "name": "alexandrupanturu/php-tests",
+  "description": "Php Tests",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Alexandru Panturu",
+      "email": "alexandru.panturu@Emag.ro"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://toran.emag.network/repo/private/"
+    },
+    {
+      "type": "composer",
+      "url": "http://toran.emag.network/repo/packagist/"
+    },
+    {
+      "packagist": false
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": { "PHPTests\\": "src" }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "config": {
+    "secure-http": false,
+    "optimize-autoloader": true
+  }
+}
